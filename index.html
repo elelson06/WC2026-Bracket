@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WC2026 Bracket - Sitio Oficial</title>
+    <style>
+        :root {
+            --bg-color: #0d1b2a;
+            --card-bg: #1b263b;
+            --accent-color: #e0a96d;
+            --text-color: #ffffff;
+            --muted-text: #a5a5a5;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 10px;
+        }
+
+        .banner {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            color: var(--text-color);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px 60px 20px;
+        }
+
+        .description {
+            max-width: 700px;
+            margin: 0 auto 50px auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--muted-text);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--card-bg);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            justify-items: center;
+            margin-top: 20px;
+        }
+
+        .screenshot-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            width: 100%;
+            max-width: 260px;
+        }
+
+        .screenshot-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .screenshot-card img {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .screenshot-card p {
+            margin: 12px 0 4px 0;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--accent-color);
+        }
+
+        footer {
+            background-color: #0b1320;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+            color: var(--muted-text);
+            border-top: 1px solid var(--card-bg);
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="img/WC2026_feature_graphic_1024x500.jpg" alt="WC2026 Bracket Banner" class="banner">
+        <h1>WC2026 Bracket</h1>
+        <p class="tagline">Simula y predice el cuadro completo del Mundial 2026</p>
+    </header>
+
+    <main class="container">
+        <section class="description">
+            <p>
+                ¡Prepárate para el torneo más grande de la historia! Con nuestra aplicación podrás armar tus predicciones de la Fase de Grupos, calcular los clasificados a Dieciseisavos de final y proyectar todo el cuadro eliminatorio hasta el campeón del mundo. Realiza el seguimiento de tus aciertos y comparte el progreso con tus amigos.
+            </p>
+        </section>
+
+        <section>
+            <h2>Capturas de Pantalla</h2>
+            <div class="screenshot-grid">
+                
+                <div class="screenshot-card">
+                    <img src="img/ss_home.png" alt="Pantalla de Inicio">
+                    <p>Panel Principal</p>
+                </div>
+
+                <div class="screenshot-card">
+                    <img src="img/ss_groups.png" alt="Fase de Grupos">
+                    <p>Fase de Grupos</p>
+                </div>
+
+                <div class="screenshot-card">
+                    <img src="img/ss_brackets.png" alt="Cuadro Eliminatorio">
+                    <p>Cuadro Eliminatorio</p>
+                </div>
+
+                <div class="screenshot-card">
+                    <img src="img/ss_teams.png" alt="Equipos Participantes">
+                    <p>Equipos 2026</p>
+                </div>
+
+                <div class="screenshot-card">
+                    <img src="img/ss_perfil.jpg" alt="Logros y Recompensas">
+                    <p>Perfil y Logros</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 WC2026 Bracket. Desarrollado para Android.</p>
+        <p>Disponible próximamente en Google Play Store.</p>
+    </footer>
+
+</body>
+</html>
